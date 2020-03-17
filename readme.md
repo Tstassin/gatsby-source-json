@@ -21,6 +21,8 @@ plugins: [
     },
     // image location to process images. Default: "image.url"
     image_location: "image.url",
+    // first-level key from json file to get data from (eg: 'data')
+    // key: 'data'
   }
 ]
 ```
