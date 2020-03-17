@@ -27,7 +27,7 @@ exports.sourceNodes = async ({
   // from a remote API.
   console.log(`Fetching JSON Data (${name})`)
   let data = await fetch({uri, auth})
-  key && data = data[key]
+  key && (data = data[key])
 
   entities = normalize.standardizeKeys(data)
 
